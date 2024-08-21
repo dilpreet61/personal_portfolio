@@ -11,16 +11,6 @@
   --accent: hsl(229, 76%, 66%);
 }
 
-/* .dark-theme {
-  --background-primary: hsl(218, 23%, 23%);
-  --background-secondary: hsl(220, 26%, 14%);
-  --action-primary: hsl(216, 15%, 52%);
-  --action-secondary: hsl(218, 23%, 23%);
-  --foreground-primary: hsl(210, 38%, 95%);
-  --foreground-secondary: hsl(211, 25%, 84%);
-  --foreground-tertiary: hsl(214, 20%, 69%);
-  --accent: hsl(229, 76%, 66%);
-} */
 
 :root {
   --fs-base: 0.85rem;
@@ -75,39 +65,6 @@ html {
   outline-offset: 4px;
 }
 
-/**
- * scrollbar style
- */
-
-/* ::-webkit-scrollbar {
-  width: 16px;
-} */
-
-/* ::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border-radius: 20px;
-  border: 4px solid;
-} */
-
-/* .light-theme::-webkit-scrollbar-thumb {
-  border-color: hsl(0, 0%, 90%);
-} */
-
-/* .dark-theme::-webkit-scrollbar-thumb {
-  border-color: hsl(219, 27%, 20%);
-} */
-/* 
-.light-theme::-webkit-scrollbar-track {
-  background: hsl(0, 0%, 90%);
-}
-
-.dark-theme::-webkit-scrollbar-track {
-  background: hsl(219, 27%, 20%); */
-/* } */
-
-/*-----------------------------------*\ 
-  #BASE STYLE
-\*-----------------------------------*/
 
 .h1,
 .h2,
@@ -145,9 +102,7 @@ html {
   font-size: var(--fs-5);
 }
 
-/*-----------------------------------*\ 
-  #REUSED STYLE
-\*-----------------------------------*/
+
 
 .container {
   margin-inline: auto;
@@ -182,31 +137,6 @@ html {
   border-color: var(--accent);
 }
 
-/*-----------------------------------*\ 
-  #Extra style for dark theme
-\*-----------------------------------*/
-
-/* .dark-theme .btn-primary:hover {
-  color: var(--background-primary);
-}
-
-.dark-theme .blog-topic {
-  background: var(--action-primary);
-  color: var(--foreground-secondary);
-}
-
-.dark-theme .blog-topic:hover {
-  background: var(--foreground-primary);
-  color: var(--action-primary);
-}
-
-.dark-theme .load-more:hover {
-  color: var(--white);
-}
-
-.dark-theme .aside .h2 {
-  color: var(--foreground-primary);
-} */
 
 .container1 {
   min-height: 100vh;
@@ -385,11 +315,6 @@ header .btn-group {
 #element {
   color: var(--accent);
 }
-
-/*-----------------------------------*\ 
-  #about
-\*-----------------------------------*/
-
 /* About Section */
 
 .section-title {
@@ -433,10 +358,6 @@ header .btn-group {
 }
 
 /* End About Section */
-
-/*-----------------------------------*\ 
-  #project
-\*-----------------------------------*/
 /* Projects section */
 #projects .projects {
   flex-direction: column;
@@ -508,9 +429,6 @@ header .btn-group {
 }
 
 /* End Projects section */
-/*-----------------------------------*\ 
-  #services
-\*-----------------------------------*/
 /* Services Section */
 #services .services {
   flex-direction: column;
@@ -579,10 +497,6 @@ header .btn-group {
   text-align: left;
 }
 /* End Services Section */
-/*-----------------------------------*\ 
-  #contact
-\*-----------------------------------*/
-
 /* contact Section */
 
 #contact .contact {
@@ -631,10 +545,7 @@ header .btn-group {
   color: var(--foreground-secondary);
 }
 /*End contact Section */
-/*-----------------------------------*\ 
-  #FOOTER
-\*-----------------------------------*/
-
+  /*FOOTER*/
 footer {
   background: var(--background-primary);
 }
@@ -691,14 +602,6 @@ footer .wrapper {
 .copyright a:hover {
   text-decoration: underline;
 }
-
-/*-----------------------------------*\ 
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 550px screen
- */
 
 @media (min-width: 550px) {
   :root {
@@ -907,26 +810,7 @@ footer .wrapper {
     color: var(--accent);
   }
 
-  /* .theme-btn-desktop {
-    position: relative;
-    background: var(--background-secondary);
-    color: var(--white);
-    width: 52px;
-    height: 26px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border-radius: 100px;
-  } */
-
-  /* .theme-btn-desktop.light {
-    background: linear-gradient(45deg, hsl(7, 100%, 71%), hsl(46, 100%, 65%));
-  } */
-
-  /* .theme-btn-desktop.dark {
-    background: linear-gradient(45deg, hsl(225, 100%, 60%), hsl(296, 80%, 40%));
-  } */
+ 
 
   .theme-btn-desktop::before {
     content: '';
@@ -941,11 +825,6 @@ footer .wrapper {
     box-shadow: 0 2px 10px -2px hsla(0, 0%, 0%, 0.05);
     z-index: 2;
   }
-
-  /* .theme-btn-desktop.dark::before {
-    left: calc(100% - 24px);
-  } */
-
   .main .container {
     display: grid;
     grid-template-columns: 5fr 2fr;
