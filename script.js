@@ -17,18 +17,3 @@ for (let i = 0; i < themeBtn.length; i++)
         themeBtn[i].classList.toggle('dark');
   });
 
-function openPDF() {
-  var pdfPath = 'Vishwajeet Anekar.pdf';
-  window.open(pdfPath, '_blank');
-
-  var isDownloadSupported = 'download' in document.createElement('a');
-
-  if (isDownloadSupported) {
-    var link = document.createElement('a');
-    link.href = pdfPath;
-    link.download = pdfPath.split('/').pop();
-    link.click();
-  } else {
-    window.open(pdfPath, '_blank');
-  }
-}
